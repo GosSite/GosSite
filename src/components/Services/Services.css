@@ -1,0 +1,384 @@
+@media only screen and (min-width: 1700px){
+    a{
+        text-decoration: none;
+    }
+    .services {
+        background-color: rgb(248, 248, 248);
+        padding-bottom: 3%;
+    }
+    .services .header{
+        padding-top: 3%;
+    }
+    .service_btns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .service_btns div {
+        border-radius: 16px;
+    }
+    
+    .services .service_btns .first {
+        background: linear-gradient(102.68deg, #8C62D7 12.24%, #9030BB 97.02%);
+        border-radius: 16px;
+        padding: 20px;
+        width: 640px;
+    }
+    
+    .service_content {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+    
+    .text {
+        padding-right: 50px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+    .first .text h3{
+        font-size: 25px;
+        padding-bottom: 10%;
+    }
+    img {
+        max-width: 150px;
+    }
+    
+    .services .other{
+        width: 360px;
+        background-color: #fff;
+    }
+    .services .other .text h3{
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+    .services .other .text p{
+        color: rgb(56, 56, 56)
+    }
+    .other .other_content .text{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .other .other_content img{
+        padding-left: 20px;
+        padding-top: 20px;
+        width: 50px;
+    }
+    .other_content_final{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .other .other_content_final img{
+        width: 50px;
+        padding: 20px;
+    }
+    .other .other_content_final .text_final{
+        color:rgb(0, 0, 255);
+        margin-top: 15px;
+    }
+    .other_content_final .back{
+        background-color: rgb(212, 209, 241);
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1699px){
+    a{
+        text-decoration: none;
+    }
+    .services {
+        background-color: rgb(248, 248, 248);
+        padding-bottom: 3%;
+    }
+    .services .header{
+        padding-top: 3%;
+    }
+    .service_btns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    .service_btns div {
+        border-radius: 16px;
+        padding-right: 20px;
+    }
+    
+    .services .service_btns .first {
+        background: linear-gradient(102.68deg, #8C62D7 12.24%, #9030BB 97.02%);
+        border-radius: 16px;
+        padding: 20px;
+        width: 550px;
+    }
+    
+    .service_content {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+    
+    .text {
+        padding-right: 50px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+    .first .text h3{
+        font-size: 25px;
+        padding-bottom: 10%;
+    }
+    img {
+        max-width: 150px;
+    }
+    
+    .services .other{
+        width: 280px;
+        background-color: #fff;
+    }
+    .services .other .text h3{
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+    .services .other .text p{
+        color: rgb(56, 56, 56)
+    }
+    .other .other_content .text{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .other .other_content img{
+        padding-left: 20px;
+        padding-top: 20px;
+        width: 50px;
+    }
+    .other_content_final{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .other .other_content_final img{
+        width: 50px;
+        padding: 20px;
+    }
+    .other .other_content_final .text_final{
+        color:rgb(0, 0, 255);
+        margin-top: 15px;
+    }
+    .other_content_final .back{
+        background-color: rgb(212, 209, 241);
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
+}
+@media only screen and (max-width: 999px){
+    a{
+        text-decoration: none;
+    }
+    .services {
+        background-color: rgb(248, 248, 248);
+        padding-bottom: 3%;
+    }
+    .services .header{
+        padding-top: 3%;
+    }
+    .service_btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .service_btns div {
+        border-radius: 16px;
+    }
+    
+    .services .service_btns .first {
+        background: linear-gradient(102.68deg, #8C62D7 12.24%, #9030BB 97.02%);
+        border-radius: 16px;
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .service_content {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+    
+    .text {
+        padding-right: 50px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+    .first .text h3{
+        font-size: 25px;
+        padding-bottom: 10%;
+    }
+    img {
+        max-width: 150px;
+    }
+    
+    .services .other{
+        width: 350px;
+        background-color: #fff;
+        padding-bottom: 20px;
+    }
+    .services .other .text h3{
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+    .services .other .text p{
+        color: rgb(56, 56, 56)
+    }
+    .other .other_content .text{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .other .other_content img{
+        padding-left: 20px;
+        padding-top: 20px;
+        width: 50px;
+    }
+    .other_content_final{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .other .other_content_final img{
+        width: 50px;
+        padding: 20px;
+    }
+    .other .other_content_final .text_final{
+        color:rgb(0, 0, 255);
+        margin-top: 15px;
+    }
+    .other_content_final .back{
+        background-color: rgb(212, 209, 241);
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .donor{
+        display: none;
+    }
+}
+@media only screen and (min-width: 999px) and (max-width: 1299px){
+    a{
+        text-decoration: none;
+    }
+    .services {
+        background-color: rgb(248, 248, 248);
+        padding-bottom: 3%;
+    }
+    .services .header{
+        padding-top: 3%;
+    }
+    .service_btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .service_btns div {
+        border-radius: 16px;
+    }
+    
+    .services .service_btns .first {
+        background: linear-gradient(102.68deg, #8C62D7 12.24%, #9030BB 97.02%);
+        border-radius: 16px;
+        padding: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 800px;
+    }
+    
+    .service_content {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+    
+    .text {
+        padding-right: 50px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+    .text p{
+        font-size: 14px;
+    }
+    .first .text h3{
+        font-size: 25px;
+        padding-bottom: 2%;
+    }
+    img {
+        max-width: 150px;
+    }
+    
+    .services .other{
+        width: 840px;
+        background-color: #fff;
+        padding-bottom: 20px;
+        margin-left: 20px;
+    }
+    .services .other .text h3{
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: bold;
+        padding-bottom: 10px;
+
+    }
+    .services .other .text p{
+        color: rgb(56, 56, 56);
+        font-size: 14px;
+    }
+    .other .other_content .text{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .other .other_content img{
+        padding-left: 20px;
+        padding-top: 20px;
+        width: 30px;
+    }
+    .other_content_final{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .other .other_content_final img{
+        width: 40px;
+        padding: 20px;
+    }
+    .other .other_content_final .text_final{
+        color:rgb(0, 0, 255);
+        margin-top: 15px;
+    }
+    .other_content_final .back{
+        background-color: rgb(212, 209, 241);
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .donor{
+        display: none;
+    }
+}

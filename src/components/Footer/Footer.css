@@ -1,0 +1,164 @@
+@media only screen and (min-width: 1700px){
+    .footer{
+        padding: 50px 0;
+        background: #ebebeb;
+        display: flex;
+        justify-content: center;
+    }
+    .footer .footer_text{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer .footer_text div{
+        padding-right: 200px;
+    }
+    .footer .footer_text p{
+        margin: 15px;
+        color: rgb(155, 155, 155);
+        font-size: 18px;
+    }
+    .footer .footer_text p:hover{
+        color: rgb(56, 56, 56);
+        user-select: pointer;
+    }
+    .footer_icon img{
+        margin-right: 20px;
+    }
+    .footer_icon img:nth-child(1):hover {
+        content: url('../../../public/icon/telegram-blue.svg');
+    }
+    .footer_icon img:nth-child(2):hover {
+        content: url('../../../public/icon/vk-blue-v2.svg');
+    }
+    .footer_icon img:nth-child(3):hover {
+        content: url('../../../public/icon/ok-orange.svg');
+    }
+    .footer_icon img:nth-child(4):hover {
+        content: url('../../../public/icon/rutube-black.svg');
+    }
+    
+}
+@media only screen and (min-width: 1300px) and (max-width: 1700px){
+    .footer{
+        padding: 50px 0;
+        background: #ebebeb;
+        display: flex;
+        justify-content: center;
+    }
+    .footer .footer_text{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer .footer_text div{
+        padding-right: 100px;
+    }
+    .footer .footer_text p{
+        margin: 15px;
+        color: rgb(155, 155, 155);
+        font-size: 18px;
+    }
+    .footer .footer_text p:hover{
+        color: rgb(56, 56, 56);
+        user-select: pointer;
+    }
+    .footer_icon img{
+        margin-right: 20px;
+    }
+    .footer_icon img:nth-child(1):hover {
+        content: url('../../../public/icon/telegram-blue.svg');
+    }
+    .footer_icon img:nth-child(2):hover {
+        content: url('../../../public/icon/vk-blue-v2.svg');
+    }
+    .footer_icon img:nth-child(3):hover {
+        content: url('../../../public/icon/ok-orange.svg');
+    }
+    .footer_icon img:nth-child(4):hover {
+        content: url('../../../public/icon/rutube-black.svg');
+    }
+    
+}
+@media only screen and (max-width: 999px){
+    .footer{
+        padding: 50px 0;
+        background: #ebebeb;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer .footer_text{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .footer_text div{
+        padding-right: 100px;
+    }
+    .footer .footer_text p{
+        margin: 15px;
+        color: rgb(155, 155, 155);
+        font-size: 18px;
+    }
+    .footer .footer_text p:hover{
+        color: rgb(56, 56, 56);
+        user-select: pointer;
+    }
+    .footer_icon img{
+        margin-left: 20px;
+    }
+    .footer_icon img:nth-child(1):hover {
+        content: url('../../../public/icon/telegram-blue.svg');
+    }
+    .footer_icon img:nth-child(2):hover {
+        content: url('../../../public/icon/vk-blue-v2.svg');
+    }
+    .footer_icon img:nth-child(3):hover {
+        content: url('../../../public/icon/ok-orange.svg');
+    }
+    .footer_icon img:nth-child(4):hover {
+        content: url('../../../public/icon/rutube-black.svg');
+    }
+    
+}
+@media only screen and (min-width: 999px) and (max-width: 1299px){
+    .footer{
+        padding: 50px 0;
+        background: #ebebeb;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer .footer_text{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .footer_text div{
+        padding-right: 100px;
+    }
+    .footer .footer_text p{
+        margin: 15px;
+        color: rgb(155, 155, 155);
+        font-size: 18px;
+    }
+    .footer .footer_text p:hover{
+        color: rgb(56, 56, 56);
+        user-select: pointer;
+    }
+    .footer_icon img{
+        margin-left: 20px;
+    }
+    .footer_icon img:nth-child(1):hover {
+        content: url('../../../public/icon/telegram-blue.svg');
+    }
+    .footer_icon img:nth-child(2):hover {
+        content: url('../../../public/icon/vk-blue-v2.svg');
+    }
+    .footer_icon img:nth-child(3):hover {
+        content: url('../../../public/icon/ok-orange.svg');
+    }
+    .footer_icon img:nth-child(4):hover {
+        content: url('../../../public/icon/rutube-black.svg');
+    }
+    
+}
+
+
