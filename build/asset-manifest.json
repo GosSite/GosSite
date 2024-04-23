@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.65632eee.css",
-    "main.js": "/static/js/main.ab2ce9d4.js",
+    "main.css": "/static/css/main.a89ef03c.css",
+    "main.js": "/static/js/main.0b60898f.js",
     "static/js/453.c4853882.chunk.js": "/static/js/453.c4853882.chunk.js",
     "static/media/Z3AZPTnTLB5s.woff": "/static/media/Z3AZPTnTLB5s.89b618086a797a8be0f4.woff",
     "static/media/0M5vtfvQWcIg.woff": "/static/media/0M5vtfvQWcIg.1d2ca94dfba6f8d87cfd.woff",
     "static/media/4S5MDVXfJr94.woff2": "/static/media/4S5MDVXfJr94.21b3848a32fce5b0f501.woff2",
     "static/media/dQdamplxFsbG.woff2": "/static/media/dQdamplxFsbG.75614cfcfedd509b1f7a.woff2",
-    "static/media/ok-orange.svg": "/static/media/ok-orange.35fa93fe33cdcb734f1e.svg",
-    "static/media/rutube-black.svg": "/static/media/rutube-black.a6d8de0896601f9bd595.svg",
+    "static/media/ok-orange.svg": "/static/media/ok-orange.7726dfc81ec2cbbb30cf.svg",
+    "static/media/rutube-black.svg": "/static/media/rutube-black.7513eff2aa85ba3f47a9.svg",
     "index.html": "/index.html",
-    "static/media/telegram-blue.svg": "/static/media/telegram-blue.fbb47f504f1d3cb3e609.svg",
-    "static/media/vk-blue-v2.svg": "/static/media/vk-blue-v2.b686061af35914cc61e3.svg",
-    "main.65632eee.css.map": "/static/css/main.65632eee.css.map",
-    "main.ab2ce9d4.js.map": "/static/js/main.ab2ce9d4.js.map",
+    "static/media/telegram-blue.svg": "/static/media/telegram-blue.7d3ac43c9db23c007969.svg",
+    "static/media/vk-blue-v2.svg": "/static/media/vk-blue-v2.12d0ae6ca10602b09106.svg",
+    "main.a89ef03c.css.map": "/static/css/main.a89ef03c.css.map",
+    "main.0b60898f.js.map": "/static/js/main.0b60898f.js.map",
     "453.c4853882.chunk.js.map": "/static/js/453.c4853882.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.65632eee.css",
-    "static/js/main.ab2ce9d4.js"
+    "static/css/main.a89ef03c.css",
+    "static/js/main.0b60898f.js"
   ]
 }
