@@ -6,16 +6,20 @@ import Footer from "../../Footer/Footer";
 import UpdateBanner from "../../Updater/Updater";
 import { useEffect, useState } from 'react';
 import BtnCarouselComponent from "../../BtnsCarousel/BtnCarousel";
+import PDFViewer from "../../PdfViewer/PDFViewer";
 const Main = () => {
     const [isMobile, setIsMobile] = useState(false);
+    const [isPDFvisible, setIsPDFvisible] = useState(false)
     useEffect(() => {
         const userAgent = navigator.userAgent.toLowerCase();
         setIsMobile(/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent));
+        setIsPDFvisible(true)
       }, []);
     const [showBanner, setShowBanner] = useState(true);
 
     return (
         <>
+        <PDFViewer/>
         {isMobile && showBanner && <UpdateBanner onClose={() => setShowBanner(false)} />}
             <div className="header">
                 <div className="logo">
