@@ -182,7 +182,7 @@ const Main = () => {
                 <Services/>
             </div>
             <Footer></Footer>
-            <script src="../../../public/scripts/flickity.pkgd.min.js"></script>
+            <script src="scripts/flickity.pkgd.min.js"></script>
         </>
     )
 }

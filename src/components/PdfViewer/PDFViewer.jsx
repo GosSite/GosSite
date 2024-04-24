@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import { pdfjs } from 'react-pdf';
-
+import pdfjsWorker from "pdfjs-dist/build/pdf.worker.entry";
 const PDFViewer = () => {
     useEffect(() => {
-        pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-            'pdfjs-dist/build/pdf.worker.min.js',
-            import.meta.url,
-        ).toString();
-        loadAgreedState();
+        pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
+        //loadAgreedState();
     }, []);
 
     const loadAgreedState = async () => {
@@ -29,6 +26,7 @@ const PDFViewer = () => {
     }
 
     const handleAgree = async () => {
+
         await localStorage.setItem('hasAgreed', true);
         setIsVisibleDoc(false);
     };
@@ -70,7 +68,7 @@ const PDFViewer = () => {
                     >
                         <div style={{ height: '80vh', overflowY: 'scroll' }}>
                             <Document
-                                file="../../pdf/agreec.pdf"
+                                file="pdf/agreec.pdf"
                                 inputProps={{ style: { color: 'white' } }}
                                 onLoadSuccess={onDocumentLoadSuccess}
                             >
