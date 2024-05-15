@@ -2,20 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import { pdfjs } from 'react-pdf';
 import pdfjsWorker from "pdfjs-dist/build/pdf.worker.entry";
+import './PDFViewer.css'
 const PDFViewer = () => {
     useEffect(() => {
         pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
-        //loadAgreedState();
     }, []);
-
-    const loadAgreedState = async () => {
-        const hasAgreed = await localStorage.getItem('hasAgreed');
-        if (hasAgreed) {
-            setIsVisibleDoc(false);
-        }else{
-            setIsVisibleDoc(true)
-        }
-    };
 
     const [numPages, setNumPages] = useState();
     const [pageNumber, setPageNumber] = useState(1);
@@ -26,11 +17,14 @@ const PDFViewer = () => {
     }
 
     const handleAgree = async () => {
-
         await localStorage.setItem('hasAgreed', true);
         setIsVisibleDoc(false);
     };
 
+    const handleDocVisible = async () => {
+        const isConfirmed = await localStorage.getItem('hasAgreed');
+        setIsVisibleDoc(isConfirmed ? false : true);
+    }
     const handlePrevious = () => {
         if (pageNumber > 1) {
             setPageNumber(pageNumber - 1);
@@ -43,6 +37,9 @@ const PDFViewer = () => {
         }
     };
 
+    useEffect(()=>{
+        handleDocVisible()
+    })
     return (
         <>
             {isVisibleDoc && (
@@ -57,16 +54,8 @@ const PDFViewer = () => {
                         zIndex: 9999,
                     }}
                 >
-                    <div
-                        style={{
-                            position: 'absolute',
-                            top: '50%',
-                            left: '50%',
-                            transform: 'translate(-50%, -50%)',
-                            textAlign: 'center',
-                        }}
-                    >
-                        <div style={{ height: '80vh', overflowY: 'scroll' }}>
+                    <div className='doc'>
+                        <div className='pdfDoc'>
                             <Document
                                 file="pdf/agreec.pdf"
                                 inputProps={{ style: { color: 'white' } }}
@@ -75,7 +64,7 @@ const PDFViewer = () => {
                                 <Page pageNumber={pageNumber} />
                             </Document>
                         </div>
-                        <div style={{ backgroundColor: '#fff' }}>
+                        <div style={{ width: '100%', backgroundColor: '#fff' }}>
                             <p>
                                 Page {pageNumber} of {numPages}
                             </p>

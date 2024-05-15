@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a89ef03c.css",
-    "main.js": "/static/js/main.e0055a10.js",
+    "main.css": "/static/css/main.0ced7af5.css",
+    "main.js": "/static/js/main.468399e1.js",
     "static/js/453.c4853882.chunk.js": "/static/js/453.c4853882.chunk.js",
     "static/media/Z3AZPTnTLB5s.woff": "/static/media/Z3AZPTnTLB5s.89b618086a797a8be0f4.woff",
     "static/media/0M5vtfvQWcIg.woff": "/static/media/0M5vtfvQWcIg.1d2ca94dfba6f8d87cfd.woff",
@@ -12,12 +12,12 @@
     "index.html": "/index.html",
     "static/media/telegram-blue.svg": "/static/media/telegram-blue.7d3ac43c9db23c007969.svg",
     "static/media/vk-blue-v2.svg": "/static/media/vk-blue-v2.12d0ae6ca10602b09106.svg",
-    "main.a89ef03c.css.map": "/static/css/main.a89ef03c.css.map",
-    "main.e0055a10.js.map": "/static/js/main.e0055a10.js.map",
+    "main.0ced7af5.css.map": "/static/css/main.0ced7af5.css.map",
+    "main.468399e1.js.map": "/static/js/main.468399e1.js.map",
     "453.c4853882.chunk.js.map": "/static/js/453.c4853882.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a89ef03c.css",
-    "static/js/main.e0055a10.js"
+    "static/css/main.0ced7af5.css",
+    "static/js/main.468399e1.js"
   ]
 }

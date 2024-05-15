@@ -1,0 +1,29 @@
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+    .pdfDoc {
+        width: 100%;
+        max-height: 80vh; /* Устанавливаем максимальную высоту */
+        overflow: auto; /* Добавляем скролл, если контент не помещается */
+    }
+    .doc {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 701px){
+    .pdfDoc {
+        width: 100%;
+        max-height: 80vh; /* Устанавливаем максимальную высоту */
+        overflow: auto; /* Добавляем скролл, если контент не помещается */
+    }
+    .doc {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}

@@ -10,17 +10,21 @@ import PDFViewer from "../../PdfViewer/PDFViewer";
 const Main = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [isPDFvisible, setIsPDFvisible] = useState(false)
-    useEffect(() => {
+    const setSettings = async()=>{
         const userAgent = navigator.userAgent.toLowerCase();
         setIsMobile(/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent));
-        setIsPDFvisible(true)
-      }, []);
+        const isConfirmed = await localStorage.getItem('hasAgreed')
+        setIsPDFvisible(isConfirmed ? false : true)
+    }
+    useEffect(() => {
+        setSettings()
+    }, []);
     const [showBanner, setShowBanner] = useState(true);
 
     return (
         <>
-        <PDFViewer/>
-        {isMobile && showBanner && <UpdateBanner onClose={() => setShowBanner(false)} />}
+            <PDFViewer />
+            {(isMobile && showBanner && !isPDFvisible) && <UpdateBanner onClose={() => setShowBanner(false)} />}
             <div className="header">
                 <div className="logo">
                     <svg width="124" height="22" viewBox="0 0 124 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -78,70 +82,70 @@ const Main = () => {
             <div className="welcome_banner">
                 <div className="list">
                     <button>
-                        <img src='../../icon/pop_person_popular.svg' alt="img"/>
+                        <img src='../../icon/pop_person_popular.svg' alt="img" />
                         <p>Популярные <br></br> услуги</p>
                     </button>
                     <button>
-                        <img src='../../icon/health.svg' alt="img"/>
+                        <img src='../../icon/health.svg' alt="img" />
                         <p>Здоровье</p><br></br>
                     </button>
                     <button>
-                        <img src='../../icon/references.svg' alt="img"/>
+                        <img src='../../icon/references.svg' alt="img" />
                         <p>Справки <br></br> Выписки</p>
                     </button>
                     <button>
-                        <img src='../../icon/pensions.svg' alt="img"/>
+                        <img src='../../icon/pensions.svg' alt="img" />
                         <p>Пенсии <br></br> Пособия</p>
                     </button>
                     <button>
-                        <img src='../../icon/transport.svg' alt="img"/>
+                        <img src='../../icon/transport.svg' alt="img" />
                         <p>Транспорт <br></br> Права</p>
                     </button>
                     <button>
-                        <img src='../../icon/family.svg' alt="img"/>
+                        <img src='../../icon/family.svg' alt="img" />
                         <p>Семья</p><br></br>
                     </button>
                     <button>
-                        <img src='../../icon/education.svg' alt="img"/>
+                        <img src='../../icon/education.svg' alt="img" />
                         <p>Образование <br></br> Дети</p>
                     </button>
                     <button>
-                        <img src='../../icon/passport.svg' alt="img"/>
+                        <img src='../../icon/passport.svg' alt="img" />
                         <p>Регистрация <br></br> Паспорт</p>
                     </button>
                     <button>
-                        <img src='../../icon/fines.svg' alt="img"/>
+                        <img src='../../icon/fines.svg' alt="img" />
                         <p>Штрафы <br></br> Налоги</p>
                     </button>
                     <button>
-                        <img src='../../icon/home.svg' alt="img"/>
+                        <img src='../../icon/home.svg' alt="img" />
                         <p>Земля <br></br> Дом</p>
                     </button>
                     <button>
-                        <img src='../../icon/another.svg' alt="img"/>
+                        <img src='../../icon/another.svg' alt="img" />
                         <p>Прочее</p><br></br>
                     </button>
                     <button>
-                        <img src='../../icon/pop_person_departments.svg' alt="img"/>
+                        <img src='../../icon/pop_person_departments.svg' alt="img" />
                         <p>Ведомства</p><br></br>
                     </button>
                 </div>
                 <div className="btns">
-                    {isMobile ? <BtnCarouselComponent/> : <div className="btns_area">
+                    {isMobile ? <BtnCarouselComponent /> : <div className="btns_area">
                         <button>
-                            <img src='../../icon/Alice.svg' alt="img"/>
+                            <img src='../../icon/Alice.svg' alt="img" />
                             <div className="btn_text">
                                 Госуслуги и Алиса
                             </div>
                         </button>
                         <button>
-                            <img src='../../icon/actions.svg' alt="img"/>
+                            <img src='../../icon/actions.svg' alt="img" />
                             <div className="btn_text">
                                 Служба по контракту
                             </div>
                         </button>
                         <button>
-                            <img src='../../icon/pension.svg' alt="img"/>
+                            <img src='../../icon/pension.svg' alt="img" />
                             <div className="btn_text">
                                 Все соцвыплати теперь в СФР
                             </div>
@@ -178,8 +182,8 @@ const Main = () => {
                 <div className="header">
                     <h1>Новое на портале</h1>
                 </div>
-                <CarouselComponent/>
-                <Services/>
+                <CarouselComponent />
+                <Services />
             </div>
             <Footer></Footer>
             <script src="scripts/flickity.pkgd.min.js"></script>
